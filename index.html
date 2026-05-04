@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica Pull Requests</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<main class="container py-5">
+    <h1 class="mb-3">Práctica de Pull Requests</h1>
+
+    <p class="lead">
+        Cada función tiene un TODO. Cada alumno debe escoger una funcionalidad, resolverla y hacer un pull request.
+
+        El resultado aparecerá aquí.
+    </p>
+
+    <div class="alert alert-info" role="status">
+        Abre también la consola del navegador para ver posibles errores.
+    </div>
+
+    <section aria-labelledby="resultados-titulo">
+        <div class="d-flex flex-column flex-md-row justify-content-between gap-2 mb-3">
+            <h2 class="h4 mb-0" id="resultados-titulo">Resultados</h2>
+            <p class="mb-0" id="resumen" aria-live="polite">Calculando resultados...</p>
+        </div>
+
+        <div class="row g-3" id="resultados"></div>
+    </section>
+</main>
+
+<script src="js/funciones.js"></script>
+<script src="js/pruebas.js"></script>
+
+</body>
+</html>
