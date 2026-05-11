@@ -38,6 +38,14 @@ function celsiusAFahrenheit(celsius) {
 
 // TODO 8: devolver una lista solo con los números pares
 function filtrarPares(numeros) {
+    let pares = [];
+
+    for (let i = 0; i < numeros.length; i++) {
+        if (numeros[i] % 2 === 0) { 
+            pares.push(numeros[i]); 
+        }     
+    }
+    return pares;
     // Ejemplo: filtrarPares([1, 2, 3, 4]) -> [2, 4]
 }
 
