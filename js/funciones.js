@@ -4,6 +4,7 @@
 // TODO 1: devolver el nombre completo uniendo nombre y apellidos
 function obtenerNombreCompleto(nombre, apellidos) {
     // Ejemplo: obtenerNombreCompleto("Ana", "López Pérez") -> "Ana López Pérez"
+    return nombre+" "+apellidos;
 }
 
 // TODO 2: devolver true si la persona es mayor de edad
@@ -11,7 +12,7 @@ function esMayorDeEdad(edad) {
     // Ejemplo: esMayorDeEdad(18) -> true
     if (edad >= 18) {
         return true;
-    }else{
+    } else {
         return false;
     }
 }
@@ -46,9 +47,9 @@ function filtrarPares(numeros) {
     let pares = [];
 
     for (let i = 0; i < numeros.length; i++) {
-        if (numeros[i] % 2 === 0) { 
-            pares.push(numeros[i]); 
-        }     
+        if (numeros[i] % 2 === 0) {
+            pares.push(numeros[i]);
+        }
     }
     return pares;
     // Ejemplo: filtrarPares([1, 2, 3, 4]) -> [2, 4]
