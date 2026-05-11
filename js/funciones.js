@@ -14,8 +14,7 @@ function esMayorDeEdad(edad) {
 // TODO 3: calcular el precio final aplicando un descuento
 function calcularPrecioConDescuento(precio, descuento) {
     // descuento será un porcentaje. Ejemplo: 20 significa 20%
-    let precioConDescuento = precio - (precio * (descuento / 100));
-    return precioConDescuento;
+    return (precio - (precio * (descuento / 100)));
 }
 
 // TODO 4: devolver el número más grande de un array
