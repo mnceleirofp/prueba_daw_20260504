@@ -9,6 +9,11 @@ function obtenerNombreCompleto(nombre, apellidos) {
 // TODO 2: devolver true si la persona es mayor de edad
 function esMayorDeEdad(edad) {
     // Ejemplo: esMayorDeEdad(18) -> true
+    if (edad >= 18) {
+        return true;
+    }else{
+        return false;
+    }
 }
 
 // TODO 3: calcular el precio final aplicando un descuento
