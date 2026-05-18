@@ -24,6 +24,14 @@ function calcularPrecioConDescuento(precio, descuento) {
 // TODO 4: devolver el número más grande de un array
 function obtenerNumeroMayor(numeros) {
     // Ejemplo: obtenerNumeroMayor([4, 10, 2]) -> 10
+        $mayor=numeros[0];
+    for($i=0;$i<numeros.length+1;$i++){
+        if(numeros[$i]>$mayor){
+            $mayor=numeros[$i];
+        }
+    }
+
+    return $mayor;
 }
 
 // TODO 5: contar cuántas palabras tiene un texto
