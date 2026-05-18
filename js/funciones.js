@@ -74,6 +74,8 @@ function calcularMedia(notas) {
 // TODO 11: devolver true si un email parece válido
 function validarEmail(email) {
     // Debe comprobar que contiene @ y .
+    let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
 }
 
 // TODO 12: capitalizar la primera letra de una palabra
