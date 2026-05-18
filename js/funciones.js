@@ -33,7 +33,14 @@ function contarPalabras(texto) {
 
 // TODO 6: devolver true si una palabra es un palíndromo
 function esPalindromo(palabra) {
-    // Ejemplo: esPalindromo("oso") -> true
+    // 1. Convertimos la palabra a minúsculas para evitar problemas con mayúsculas (ej: "Oso")
+    const palabraMinuscula = palabra.toLowerCase();
+    
+    // 2. Separamos la palabra en letras, le damos la vuelta y la volvemos a unir
+    const palabraAlReves = palabraMinuscula.split('').reverse().join('');
+    
+    // 3. Devolvemos si son exactamente iguales (true o false)
+    return palabraMinuscula === palabraAlReves;
 }
 
 // TODO 7: convertir grados Celsius a Fahrenheit
